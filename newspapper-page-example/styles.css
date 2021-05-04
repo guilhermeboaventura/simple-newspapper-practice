@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 h1 {
     display: flex;
     color: rgb(65, 65, 65);
@@ -7,7 +11,7 @@ h1 {
 }
 
 section {
-    border: solid;
+    border: thin;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -17,6 +21,11 @@ section {
 
 article {
     border: solid;
+}
+
+.article-image {
+    width: 40%;
+    padding: 2rem;
 }
 
 .site-name {
@@ -31,6 +40,7 @@ article {
 .article-title-name {
     font-size: 25px;
     padding: 10px 10px;
+    justify-content: center;
 }
 
 .flex-container {
@@ -38,7 +48,8 @@ article {
 }
 
 .article-paragraph {
-    padding: 12px;
+    padding: 15px;
+    margin: 10px;
 }
 
 .article-twenty-five {
@@ -47,4 +58,19 @@ article {
 
 .article-fifteen {
     width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subjects {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.space-subjects {
+    width: 75%;
 }
